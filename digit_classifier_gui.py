@@ -26,7 +26,7 @@ class DigitClassifierGUI(tk.Tk):
         super().__init__()
 
         self.model = model
-        self.canvas_size = 280
+        self.canvas_size = 300
         self.image = Image.new("L", (self.canvas_size, self.canvas_size), color=255)
         self.draw = ImageDraw.Draw(self.image)
 
