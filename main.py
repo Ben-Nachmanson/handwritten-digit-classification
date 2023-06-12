@@ -5,8 +5,6 @@ from torchvision import datasets, transforms
 import matplotlib.pyplot as plt
 import numpy as np
 
-
-
 # transform to normalize the data
 transform = transforms.Compose([transforms.ToTensor(), transforms.Normalize((0.5,),(0.5,))])
 
@@ -34,9 +32,6 @@ class Network(nn.Module):
         x = F.relu(self.fc2(x))
         x = F.log_softmax(self.fc3(x), dim=1)
         return x
-
-
-
 
 model = Network()
 
@@ -81,6 +76,7 @@ for images, labels in testloader:
         if(true_label == pred_label):
             correct_count+=1
         all_count +=1
+        
 print("Number of Images Tests =", all_count)
 print("\nModel Accuracy =", (correct_count/all_count))
 
