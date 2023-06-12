@@ -2,6 +2,9 @@ import torch
 from torch import nn, optim
 import torch.nn.functional as F
 from torchvision import datasets, transforms
+import matplotlib.pyplot as plt
+import numpy as np
+
 
 
 # transform to normalize the data
@@ -15,10 +18,24 @@ trainloader = torch.utils.data.DataLoader(trainset, batch_size=64, shuffle=True)
 testset = datasets.MNIST('~/.pytorch/MNIST_data/', download=True, train=False, transform=transform)
 testloader = torch.utils.data.DataLoader(testset, batch_size=64, shuffle=True)
 
-import matplotlib.pyplot as plt
-import numpy as np
 # show an image from the MNIST dataset
 #plt.imshow(trainset[0][0].numpy().squeeze(), cmap='gray')
+
+class Network(nn.Module):
+    def __init__(self):
+        super().__init__()
+        self.fc1 = nn.Linear(784, 128)
+        self.fc2 = nn.Linear(128, 64)
+        self.fc3 = nn.Linear(64,10)
+    
+    def forward(self,x):
+        x = x.view(x.shape[0], -1)
+        x = F.relu(self.fc1(x))
+        x = F.relu(self.fc2(x))
+        x = F.log_softmax(self.fc3(x), dim=1)
+        return x
+
+
 
 
 model = Network()
@@ -26,7 +43,7 @@ model = Network()
 criterion = nn.NLLLoss()
 optimizer = optim.SGD(model.parameters(), lr = 0.03)
 
-epochs = 20
+epochs = 10
 losses = []
 for e in range(epochs):
     running_loss = 0
