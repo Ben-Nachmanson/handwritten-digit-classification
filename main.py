@@ -38,6 +38,7 @@ model = Network()
 criterion = nn.NLLLoss()
 optimizer = optim.SGD(model.parameters(), lr = 0.03)
 
+# Training Model.
 epochs = 10
 losses = []
 for e in range(epochs):
@@ -63,6 +64,7 @@ plt.ylabel('Loss')
 plt.title('Training Loss over Time')
 #plt.show()
 
+# Testing Model
 correct_count, all_count = 0, 0
 for images, labels in testloader:
     for i in range(len(labels)):
