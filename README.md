@@ -2,7 +2,9 @@
 
 This repository contains a simple implementation of a neural network to classify handwritten digits using the MNIST dataset. The neural network is built and trained using PyTorch.
 
+<p align="center">
 <img src="images/num.png" width="50%" height="50%">
+</p>
 
 ## Project Description
 
@@ -30,7 +32,19 @@ pip install torch torchvision numpy matplotlib
 
 ## Results
 
-The trained model achieves an accuracy of 95% on the MNIST test set.
+The trained model achieves an accuracy of 95% on the MNIST test set. I've have also developed a graphical user interface (GUI) that allows users to sketch digits. The program then uses the sketch as input for a trained model, which predicts the digit the user intended to draw.
+
+
+<table>
+  <tr>
+    <td align="center"><img src="images/1.png" ></td>
+    <td align="center"><img src="images/2.png" ></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="images/3.png"></td>
+    <td align="center"><img src="images/4.png"></td>
+  </tr>
+</table>
 
 ## License
 
