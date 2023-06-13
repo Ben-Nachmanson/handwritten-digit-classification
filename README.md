@@ -8,9 +8,13 @@ This repository contains a simple implementation of a neural network to classify
 
 ## Project Description
 
-The project makes use of the popular MNIST dataset, which consists of grayscale images of handwritten digits (0-9), each of 28x28 pixels. The task is to classify these images into the correct digit.
+This project employs the widely-used MNIST dataset, composed of grayscale images of handwritten digits (0-9), each measuring 28x28 pixels. The objective is to correctly classify these images based on the digit they represent.
 
-The neural network used for this task is a simple feedforward neural network with two hidden layers. PyTorch's efficient tensor computations and automatic differentiation capabilities are used to build and train the network.
+I've developed a user-friendly graphical user interface (GUI) that enables users to sketch digits. The program then uses the sketched digit as input to the trained model, which predicts the digit the user intended to draw.
+
+The predictive model behind the scenes is a straightforward feedforward neural network with two hidden layers. The network has been trained and implemented using PyTorch, leveraging its efficient tensor computations and automatic differentiation functionalities. This simplifies the development process while ensuring optimal performance.
+
+Through this project, users can directly interact with the model, providing a more intuitive understanding of the application of neural networks in image classification tasks.
 
 ## Dependencies
 
