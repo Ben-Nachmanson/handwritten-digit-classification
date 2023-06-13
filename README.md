@@ -2,7 +2,7 @@
 
 This repository contains a simple implementation of a neural network to classify handwritten digits using the MNIST dataset. The neural network is built and trained using PyTorch.
 
-![Image description](https://www.google.com/url?sa=i&url=https%3A%2F%2Ftowardsdatascience.com%2Fpart-5-training-the-network-to-read-handwritten-digits-c2288f1a2de3&psig=AOvVaw3gfatJiEuxjHxpI4zu5N8t&ust=1686766398594000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCJjMg9LswP8CFQAAAAAdAAAAABAE](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*FL6DWzN-awxCaG8bS1ZD_Q.png )
+![Image description](images/num.png)
 
 ## Project Description
 
