@@ -67,7 +67,7 @@ class DigitClassifierGUI(tk.Tk):
         img = self.image.resize((28, 28))
         img = 255 - np.array(img)  # invert colors
         img = img / 255.0  # scale values between 0 and 1
-        img = img.reshape(1, 784)
+        img = img.reshape(1,28,28,1)
         img = torch.from_numpy(img).float()
         with torch.no_grad():
             output = self.model(img)
@@ -76,7 +76,7 @@ class DigitClassifierGUI(tk.Tk):
         _, predicted = torch.max(output, 1)
         pred = predicted.item()
         confidence = probab[pred]
-        self.prediction_text.set('Prediction: {} (Confidence: {:.2f}%)'.format(pred, confidence * 100))
+        self.prediction_text.set('Prediction: {}'.format(pred, confidence * 100))
 
     def save_last_point(self, event):
         self.lastx, self.lasty = event.x, event.y
