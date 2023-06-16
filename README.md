@@ -1,7 +1,7 @@
 # Handwritten Digit Classification using PyTorch
 
 This repository contains a simple implementation of a neural network to classify handwritten digits using the MNIST dataset. The neural network is built and trained using PyTorch.
-
+https://medium.com/@bennachmanson/handwritten-digit-classification-using-convolution-neural-networks-cnn-in-pytorch-3154e15b378c
 <p align="center">
 <img src="images/num.png" width="50%" height="50%">
 </p>
