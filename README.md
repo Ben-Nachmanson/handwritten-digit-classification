@@ -15,6 +15,7 @@ I've developed a user-friendly graphical user interface (GUI) that enables users
 The predictive model behind the scenes is a straightforward feedforward neural network with two hidden layers. The network has been trained and implemented using PyTorch, leveraging its efficient tensor computations and automatic differentiation functionalities. This simplifies the development process while ensuring optimal performance.
 
 Through this project, users can directly interact with the model, providing a more intuitive understanding of the application of neural networks in image classification tasks.
+
 https://medium.com/@bennachmanson/handwritten-digit-classification-using-convolution-neural-networks-cnn-in-pytorch-3154e15b378c
 ## Dependencies
 
