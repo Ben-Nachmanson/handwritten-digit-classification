@@ -7,6 +7,7 @@ This repository contains a simple implementation of a neural network to classify
 </p>
 
 ## Project Description
+https://medium.com/@bennachmanson/handwritten-digit-classification-using-convolution-neural-networks-cnn-in-pytorch-3154e15b378c
 
 This project employs the widely-used MNIST dataset, composed of grayscale images of handwritten digits (0-9), each measuring 28x28 pixels. The objective is to correctly classify these images based on the digit they represent.
 
@@ -16,7 +17,7 @@ The predictive model behind the scenes is a straightforward feedforward neural n
 
 Through this project, users can directly interact with the model, providing a more intuitive understanding of the application of neural networks in image classification tasks.
 
-https://medium.com/@bennachmanson/handwritten-digit-classification-using-convolution-neural-networks-cnn-in-pytorch-3154e15b378c
+
 ## Dependencies
 
 * Python 3.8
